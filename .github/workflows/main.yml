@@ -7,9 +7,9 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: rschwemmer/test_action@v1.0.0
+        uses: rschwemmer/test_action@1.0
         with:
-          who-to-greet: 'Mona the Octocat'
+          who-to-greet: 'Randy'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
